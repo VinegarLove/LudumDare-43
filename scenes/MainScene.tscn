@@ -1,0 +1,175 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/Platform1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Enemy1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Enemy2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/audios/music.ogg" type="AudioStream" id=5]
+
+[node name="MainScene" type="Node" index="0"]
+
+[node name="backgrounds" type="Node" parent="." index="0"]
+
+[node name="pickupables" type="Node" parent="." index="1"]
+
+[node name="Position2D" type="Position2D" parent="pickupables" index="0"]
+
+[node name="platforms" type="Node" parent="." index="2"]
+
+[node name="Platform1" parent="platforms" index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 148.772, -81.7348 )
+
+[node name="Platform2" parent="platforms" index="1" instance=ExtResource( 1 )]
+
+position = Vector2( 331.334, -145.677 )
+
+[node name="Platform3" parent="platforms" index="2" instance=ExtResource( 1 )]
+
+position = Vector2( 340, -480 )
+
+[node name="Platform4" parent="platforms" index="3" instance=ExtResource( 1 )]
+
+position = Vector2( 66.6944, -289.227 )
+
+[node name="Platform5" parent="platforms" index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 327.437, -286.185 )
+
+[node name="Platform6" parent="platforms" index="5" instance=ExtResource( 1 )]
+
+position = Vector2( -80, -640 )
+
+[node name="Platform7" parent="platforms" index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 150, -590 )
+
+[node name="Platform8" parent="platforms" index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 500, -560 )
+
+[node name="Platform9" parent="platforms" index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 450.027, -286.198 )
+
+[node name="Platform10" parent="platforms" index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 570.914, -286.316 )
+
+[node name="Platform11" parent="platforms" index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 220, -480 )
+
+[node name="Platform12" parent="platforms" index="11" instance=ExtResource( 1 )]
+
+position = Vector2( -50, -290 )
+
+[node name="Platform13" parent="platforms" index="12" instance=ExtResource( 1 )]
+
+position = Vector2( 270, -590 )
+
+[node name="Platform14" parent="platforms" index="13" instance=ExtResource( 1 )]
+
+position = Vector2( 180, -720 )
+
+[node name="Platform15" parent="platforms" index="14" instance=ExtResource( 1 )]
+
+position = Vector2( 880, -720 )
+
+[node name="Platform16" parent="platforms" index="15" instance=ExtResource( 1 )]
+
+position = Vector2( -390, -710 )
+
+[node name="Platform17" parent="platforms" index="16" instance=ExtResource( 1 )]
+
+position = Vector2( 300, -720 )
+
+[node name="Platform18" parent="platforms" index="17" instance=ExtResource( 1 )]
+
+position = Vector2( 500, -560 )
+
+[node name="Platform19" parent="platforms" index="18" instance=ExtResource( 1 )]
+
+position = Vector2( 380, -880 )
+
+[node name="Platform20" parent="platforms" index="19" instance=ExtResource( 1 )]
+
+position = Vector2( 50, -950 )
+
+[node name="Platform21" parent="platforms" index="20" instance=ExtResource( 1 )]
+
+position = Vector2( 230, -1090 )
+
+[node name="Platform22" parent="platforms" index="21" instance=ExtResource( 1 )]
+
+position = Vector2( 20, -1260 )
+
+[node name="Platform23" parent="platforms" index="22" instance=ExtResource( 1 )]
+
+position = Vector2( 420, -1210 )
+
+[node name="Platform24" parent="platforms" index="23" instance=ExtResource( 1 )]
+
+position = Vector2( 150, -1260 )
+
+[node name="Platform25" parent="platforms" index="24" instance=ExtResource( 1 )]
+
+position = Vector2( 270, -1260 )
+
+[node name="Player" parent="." index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 108, -211 )
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "Visibility" ]
+is_damaging = false
+start_position = NodePath("../pickupables/Position2D")
+
+[node name="enemies" type="Node" parent="." index="4"]
+
+[node name="enemy" parent="enemies" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 325.112, -385.515 )
+
+[node name="enemy8" parent="enemies" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 190, -810 )
+
+[node name="enemy9" parent="enemies" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -10, -1360 )
+
+[node name="enemy2" parent="enemies" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 59.5831, -389.587 )
+
+[node name="enemy3" parent="enemies" index="4" instance=ExtResource( 4 )]
+
+position = Vector2( -81.839, -743.231 )
+
+[node name="enemy4" parent="enemies" index="5" instance=ExtResource( 4 )]
+
+position = Vector2( 499.385, -694.796 )
+
+[node name="enemy6" parent="enemies" index="6" instance=ExtResource( 4 )]
+
+position = Vector2( -410, -810 )
+
+[node name="enemy5" parent="enemies" index="7" instance=ExtResource( 4 )]
+
+position = Vector2( 880, -830 )
+
+[node name="enemy7" parent="enemies" index="8" instance=ExtResource( 4 )]
+
+position = Vector2( 390, -980 )
+
+[node name="soundtracks" type="Node" parent="." index="5"]
+
+[node name="music1" type="AudioStreamPlayer" parent="soundtracks" index="0"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+
