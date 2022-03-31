@@ -17,3 +17,7 @@ SHIFT = Attack
 SPACE = Jump
 A = go left
 D = go right
+
+https://vinegarlove.itch.io/vampires-tower
+
+https://ldjam.com/events/ludum-dare/43/vampires-tower
